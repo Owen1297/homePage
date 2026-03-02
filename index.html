@@ -1,10 +1,16 @@
 <style>
-    body {
+  html, body {
     margin: 0;
     text-align: center;
     background-color: black;
     padding: 0;
     height: 100vh;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
   }
 
   .bg {
@@ -13,6 +19,9 @@
     padding: 0;
     margin: 0 auto;
     display: block;
+    user-select: none;         /* prevents selection */
+    -webkit-user-drag: none;   /* prevents dragging (iOS/Safari) */
+    pointer-events: none;      /* optional: disables interaction entirely */
   }
 </style>
 
